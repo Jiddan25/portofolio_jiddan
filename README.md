@@ -7,5 +7,6 @@ Website ini tampil rapi di ponsel, tablet, dan laptop.
 ## Fitur
 ## Teknologi
 ## Tautan- Halaman **Beranda** berisi profil, hobi, cita-cita, keahlian, dan 
-jadwal belajar- Halaman **Proyek** berisi daftar proyek dalam bentuk kartu- Halaman **Kontak** berisi form untuk menghubungi saya- Tampilan responsif dengan Flexbox dan *media query*- HTML5- CSS3 (Flexbox dan media query)- Git dan GitHub- Website: https//portofoliojiddan.vercel.app
+jadwal belajar- Halaman **Proyek** berisi daftar proyek dalam bentuk kartu- Halaman **Kontak** berisi form untuk menghubungi saya- Tampilan responsif dengan Flexbox dan *media query*- HTML5- CSS3 (Flexbox dan media query)- Git dan GitHub- Website: 
+portofoliojiddan-psi.vercel.app
 Dibuat oleh: Mohammad Jiddan Firdaus, SMK Negeri 1 Pasuruan
