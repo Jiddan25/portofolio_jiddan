@@ -123,7 +123,7 @@ if (daftarProyek) {
 }
 // 5. Repositori GitHub terbaru (halaman Proyek)
 const username = "Jiddan25";
-const alamatRepo = `https://api.github.com/users/${Jiddan25}/repos`;
+const alamatRepo = `https://api.github.com/users/${username}/repos`;
 const pilihan = "?sort=updated&per_page=6";
 
 const daftarRepo = document.querySelector("#daftar-repo");
