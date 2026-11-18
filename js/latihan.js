@@ -1,20 +1,18 @@
-// Latihan JavaScript Dasar - Minggu 06
 // Kalkulator nilai rapor di Console
 // 1. Pesan pertama ke Console
-console.log("Halo, saya jidan!");
+console.log("Halo, saya Andi!");
 console.log("Ini latihan JavaScript pertamaku.");
-
 // 2. Data siswa
-const nama = "jidan firdaus";
-const kelas = "X RPL 1";
+const nama = "Andi Pratama";
+const kelas = "X PPLG 1";
 const kkm = 75;
 let nilaiTugas = 85;
 let nilaiUts = 78;
 let nilaiUas = 89;
 let kehadiran = 90;
 console.log(`Nama: ${nama}, kelas ${kelas}`);
-console.log(`Nilai tugas ${nilaiTugas}, UTS ${nilaiUts}, UAS ${nilaiUas}`);
-
+console.log(`Nilai tugas ${nilaiTugas}, UTS ${nilaiUts}, UAS $
+{nilaiUas}`);
 // 3. Fungsi
 const hitungRataRata = (tugas, uts, uas) => (tugas + uts + uas) / 3;
 function predikat(nilai) {
@@ -30,9 +28,9 @@ function predikat(nilai) {
 }
 function rapor(namaSiswa, tugas, uts, uas) {
   const rata = hitungRataRata(tugas, uts, uas);
-  return `${namaSiswa}: rata-rata ${rata}, predikat ${predikat(rata)}`;
+  return `${namaSiswa}: rata-rata ${rata}, predikat $
+{predikat(rata)}`;
 }
-
 // 4. Hasil nilai Andi
 const rataRata = hitungRataRata(nilaiTugas, nilaiUts, nilaiUas);
 const lulus = rataRata >= kkm;
@@ -47,14 +45,12 @@ if (lulus) {
 } else {
   console.log("Tetap semangat, ikuti remedial ya.");
 }
-
 // 5. Menguji fungsi predikat dengan beberapa nilai
 console.log(`predikat(95) = ${predikat(95)}`); // A
 console.log(`predikat(90) = ${predikat(90)}`); // A, tepat di batas
 console.log(`predikat(84) = ${predikat(84)}`); // B
 console.log(`predikat(70) = ${predikat(70)}`); // C
 console.log(`predikat(69) = ${predikat(69)}`); // D
-
 // 6. Rapor beberapa siswa
 console.log(rapor("Andi", 85, 78, 89));
 console.log(rapor("Sinta", 92, 88, 96));
