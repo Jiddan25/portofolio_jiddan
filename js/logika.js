@@ -12,7 +12,10 @@ console.log(`ganjilGenap(12) = ${ganjilGenap(12)}`);
 console.log(`ganjilGenap(0) = ${ganjilGenap(0)}`);
 
 // Soal 2: celsius ke fahrenheit - wajib arrow function
-const celsiusKeFahrenheit = (celsius) => celsius * 9 / 5 + 32;
+const celsiusKeFahrenheit = (celsius) => {
+  return celsius * 9 / 5 + 32;
+}
+
 console.log("Soal 2: celsius ke fahrenheit");
 console.log(`celsiusKeFahrenheit(0) = ${celsiusKeFahrenheit(0)}`);
 console.log(`celsiusKeFahrenheit(100) = ${celsiusKeFahrenheit(100)}`);
@@ -28,14 +31,20 @@ function nilaiTerbesar(a, b, c) {
     return c;
   }
 }
-console.log("Soal 3: nilai terbesar");
+console.log("Soal 3: Mengembalikan angka terbesar dari tiga angka");
 console.log(`nilaiTerbesar(5, 9, 2) = ${nilaiTerbesar(5, 9, 2)}`);
 console.log(`nilaiTerbesar(80, 75, 80) = ${nilaiTerbesar(80, 75, 80)}`);
 console.log(`nilaiTerbesar(-3, -7, -1) = ${nilaiTerbesar(-3, -7, -1)}`);
 
 // Soal 4: tahun kabisat
 function tahunKabisat(tahun) {
-  return (tahun % 4 === 0 && tahun % 100 !== 0) || (tahun % 400 === 0);
+  if (
+    (tahun % 4 === 0 && tahun % 100 !== 0) || tahun % 400 === 0
+  ) {
+    return true;
+  } else {
+    return false;
+  }
 }
 console.log("Soal 4: tahun kabisat");
 console.log(`tahunKabisat(2024) = ${tahunKabisat(2024)}`);
@@ -46,9 +55,9 @@ console.log(`tahunKabisat(2000) = ${tahunKabisat(2000)}`);
 // Soal 5: harga setelah diskon
 function hargaSetelahDiskon(total) {
   if (total >= 200000) {
-    return total * 0.8;
+    return total - (total * 20 / 100);
   } else if (total >= 100000) {
-    return total * 0.9;
+    return total - (total * 10 / 100);
   } else {
     return total;
   }
